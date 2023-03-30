@@ -20,5 +20,5 @@ The "New game" button returns all the cards to the deck and shuffles again.
 ![demo3](https://user-images.githubusercontent.com/120717745/228972009-c194535b-07bc-4d81-9745-08377f169f8a.gif)
 
 
-The game also implements popup notification messages.
+The application also implements popup notification messages.
 ![image2.png](src%2Fmain%2Fresources%2Fimage2.png)
