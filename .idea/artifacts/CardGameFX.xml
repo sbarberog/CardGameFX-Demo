@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CardGameFX">
+    <output-path>$PROJECT_DIR$/out/artifacts/CardGameFX</output-path>
+    <root id="archive" name="CardGameFX.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="CardGameFX.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17.0.2/5c6c84557bcd0016b5784d2b0cd8ae769e63d4ed/javafx-media-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq.attach/util/4.0.13/afd0eab9711a196fdbf639987fd2e5b09cfad237/util-4.0.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq.attach/lifecycle/4.0.13/67db85de9611371b03e3eb3f25454415801a5744/lifecycle-4.0.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl-core/17.2/f68d59106d2d4d411d980777d035219ddb4c8f24/fxgl-core-17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17.0.2/f52640ea07a0d7fe2ac8b9f945ec58fa22ac1afd/javafx-controls-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl-io/17.2/aa1cb154ec24f8868c834570ea53faa2902dcd89/fxgl-io-17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17.0.2/707f290bacde2738c0a7e1d0b4a8193002c29cf7/javafx-controls-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl/17.2/35db6ae960eec2dcfd19262d3b7f9c42f0e95bc3/fxgl-17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.1/8a97e00e429c42f74757b0a8cd1d39dddd41524f/jackson-databind-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.1/7c5493930e439be6fcec80a9afd6516b8e5e8760/jackson-core-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/17.0.2/5079f88d5345e988222c90a345ad682b7aaccad3/javafx-fxml-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.controlsfx/controlsfx/11.1.2/584bc3f468e2c33100fcdbb1daf0a3e095e5e031/controlsfx-11.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.1/aa079f822ddce5548018286d19ccb15c2fc202d7/jackson-annotations-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17.0.2/b74a915a6f2790ca1387aff211b92c699ea631f/javafx-media-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq.attach/audio/4.0.13/5f799f84ebfa1749e9a0d5d1c98258a6fa6d8252/audio-4.0.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl-gameplay/17.2/c896d7d4bc2ee0b6139643e7007ad9a7e543905d/fxgl-gameplay-17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl-scene/17.2/a17ea10194e806c1557913eb51b0de0c10ad3561/fxgl-scene-17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl-entity/17.2/3692459cbcd9d787c1124071f7beefef05f70c6e/fxgl-entity-17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17.0.2/1eb7ce07e07ccc2fcb26103f07535e72069519d6/javafx-graphics-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17.0.2/ca46f15a306175ac1513211e1d190a5baacd77cc/javafx-base-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq.attach/storage/4.0.13/c16d015d2cd2f7582fb37aebb0ad21a742f22ff3/storage-4.0.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17.0.2/6f95886c8fed3e1b21370a199c3937846ef6b3cc/javafx-graphics-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17.0.2/1bd6dc88b180a6239a5067320c2f0d7f3526e1d2/javafx-base-17.0.2-win.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
