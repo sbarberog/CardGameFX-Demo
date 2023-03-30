@@ -1,2 +1,2 @@
 # Card Game FX - Demo
-Practice demo for a card game implemented with JavaFX.
+Demo for a card game implemented with JavaFX for learning purposes.
