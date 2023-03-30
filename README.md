@@ -1,5 +1,5 @@
 # Card Game FX - Demo
-Card game demo implemented with JavaFX on IntelliJ for learning purposes.
+Card game demo implemented with JavaFX on IntelliJ for learning purposes. This is a proof of concept, so there are no rules implemented and the behavior is very basic.
 
 
 ![demo1](https://user-images.githubusercontent.com/120717745/228971835-6c82cdf3-464e-44a1-8762-6c0c4304850f.gif)
