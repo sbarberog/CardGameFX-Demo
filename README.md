@@ -13,4 +13,9 @@ If you drop a card inside the paper bin it will be returned at the bottom of the
 
 The "New game" button returns all the cards to the deck and shuffles them again.
 
+
+
+https://user-images.githubusercontent.com/120717745/228967394-534fa822-3eee-425a-aea8-5d1305f416ba.mp4
+
+
 ![image2.png](src%2Fmain%2Fresources%2Fimage2.png)
