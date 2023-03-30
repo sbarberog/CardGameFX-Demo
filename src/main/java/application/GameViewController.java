@@ -3,6 +3,7 @@ package application;
 import excepciones.NoHayCartasException;
 import javafx.animation.*;
 import javafx.fxml.FXML;
+import javafx.geometry.Bounds;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.Node;
@@ -36,6 +37,8 @@ public class GameViewController {
     private Label txtBorrado;
     @FXML
     private Label txtDeck;
+    @FXML
+    private Button reset;
     private ImageView vistaBoom;
     private Mazo mazo;
     private int posX, posY, cont;
@@ -97,13 +100,16 @@ public class GameViewController {
         mesa.getChildren().add(vistaCarta);
         vistaCarta.setViewOrder(viewOrder);
         viewOrder-=0.001;
-        setDraggable(vistaCarta);
+        setCardEvents(vistaCarta);
 
+        Bounds boundsInScreen = imgBaraja.localToScreen(imgBaraja.getBoundsInLocal());
+        double posXMazo=boundsInScreen.getMinX()+100;
+        double posYMazo=boundsInScreen.getMinY()-90;
         TranslateTransition tr = new TranslateTransition(Duration.millis(800));
         int altura = (int) (Math.random() * 20);
-        tr.setFromY(580);
+        tr.setFromY(posYMazo);
         tr.setToY(posY*50+altura);
-        tr.setFromX(700);
+        tr.setFromX(posXMazo);
         tr.setToX(50 + posX * 150);
         tr.setInterpolator(Interpolator.EASE_OUT);
         RotateTransition rt = new RotateTransition(Duration.millis(800));
@@ -136,19 +142,38 @@ public class GameViewController {
         cont=0;
         viewOrder=100;
         txtCarta.setText("New game started");
-        mesa.getChildren().clear();
-        mazo = new Mazo();
-        mazo.barajar();
+        Bounds boundsInScreen = imgBaraja.localToScreen(imgBaraja.getBoundsInLocal());
+        double posXMazo=boundsInScreen.getMinX()+100;
+        double posYMazo=boundsInScreen.getMinY()-90;
+        for (Node img: mesa.getChildren()) {
+            mazo.devolverCarta((Carta) img.getUserData());
+            if(mazo.numCartas()==52){
+                mazo.barajar();
+                Notifications.create()
+                        .title("New game")
+                        .text("Shuffling cards...")
+                        .owner(mesa)
+                        .position(Pos.TOP_LEFT )
+                        .hideAfter(Duration.seconds(10))
+                        .showInformation();
+            }
+            TranslateTransition toDeck= new TranslateTransition();
+            toDeck.setToX(posXMazo);
+            toDeck.setToY(posYMazo);
+            double rand=Math.random()*700;
+            toDeck.setDuration(Duration.millis(rand));
+            toDeck.setInterpolator(Interpolator.EASE_IN);
+            toDeck.setNode(img);
+            toDeck.setOnFinished(event -> {
+                mesa.getChildren().remove(img);
+                event.consume();
+            });
+            toDeck.play();
         actualizaTxtMazo();
         imgBaraja.setDisable(false);
         imgBaraja.setOpacity(1);
-        Notifications.create()
-                .title("New game")
-                .text("Shuffling cards...")
-                .owner(mesa)
-                .position(Pos.TOP_LEFT )
-                .hideAfter(Duration.millis(10000))
-                .showInformation();
+        }
+
     }
 
     @FXML
@@ -166,7 +191,7 @@ public class GameViewController {
     }
 
     @FXML
-    private void setDraggable(Node carta) {
+    private void setCardEvents(Node carta) {
 
         double originalViewOrder= carta.getViewOrder();
         carta.setOnMouseEntered(e -> {
@@ -230,6 +255,19 @@ public class GameViewController {
             paperBin.setEffect(glow);
             carta.setMouseTransparent(false);
         });
+//        carta.adde(
+//                event -> {
+//                    Bounds boundsInScene = imgBaraja.localToScene(imgBaraja.getBoundsInLocal());
+//                    double posXMazo=boundsInScene.getCenterX()-50;
+//                    double posYMazo=boundsInScene.getCenterY()-150;
+//                    TranslateTransition toDeck= new TranslateTransition();
+//                    toDeck.setToX(posXMazo);
+//                    toDeck.setToY(posYMazo);
+//                    toDeck.setDuration(Duration.millis(300));
+//                    toDeck.setNode(carta);
+//                    toDeck.play();
+//                }
+//        );
     }
 
     @FXML
