@@ -160,7 +160,7 @@ public class GameViewController {
             TranslateTransition toDeck= new TranslateTransition();
             toDeck.setToX(posXMazo);
             toDeck.setToY(posYMazo);
-            double rand=Math.random()*700;
+            double rand=Math.random()*500+200;
             toDeck.setDuration(Duration.millis(rand));
             toDeck.setInterpolator(Interpolator.EASE_IN);
             toDeck.setNode(img);
